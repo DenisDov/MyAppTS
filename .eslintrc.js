@@ -8,6 +8,5 @@ module.exports = {
 	plugins: ['@typescript-eslint'],
 	rules: {
 		'react-native/no-inline-styles': 0,
-		'@typescript-eslint/no-var-requires': 0,
 	},
 };

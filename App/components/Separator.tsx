@@ -4,8 +4,9 @@ import { Box } from '../theme';
 import { Theme } from '../theme/Theme';
 
 interface SeparatorProps {
-	bgcolor: keyof Theme['colors'];
+	bgcolor?: keyof Theme['colors'];
 }
+
 const Separator = ({ bgcolor }: SeparatorProps) => (
 	<Box height={StyleSheet.hairlineWidth} backgroundColor={bgcolor} marginHorizontal="m" />
 );

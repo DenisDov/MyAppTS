@@ -14,8 +14,7 @@ import { HomeNavigator } from './screens/Home';
 
 const store = createStore();
 const Stack = createStackNavigator();
-let a = '3';
-console.log(a);
+
 const App = () => {
 	return (
 		<Provider store={store}>

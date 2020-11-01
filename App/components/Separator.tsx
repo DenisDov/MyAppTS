@@ -1,9 +1,10 @@
 import React from 'react';
 import { StyleSheet } from 'react-native';
 import { Box } from '../theme';
+import { Theme } from '../theme/Theme';
 
 interface SeparatorProps {
-	bgcolor: any; // TODO: add type
+	bgcolor: keyof Theme['colors'];
 }
 const Separator = ({ bgcolor }: SeparatorProps) => (
 	<Box height={StyleSheet.hairlineWidth} backgroundColor={bgcolor} marginHorizontal="m" />

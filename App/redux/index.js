@@ -10,20 +10,20 @@ export const reducers = combineReducers({
 });
 
 export default () => {
-	let { store, sagasManager, sagaMiddleware } = configureStore(reducers, rootSaga);
+	const { store, sagasManager, sagaMiddleware } = configureStore(reducers, rootSaga);
 
-	if (module.hot) {
-		module.hot.accept(() => {
-			const nextRootReducer = require('./').reducers;
-			store.replaceReducer(nextRootReducer);
+	// if (module.hot) {
+	// 	module.hot.accept(() => {
+	// 		const nextRootReducer = require('./').reducers;
+	// 		store.replaceReducer(nextRootReducer);
 
-			const newYieldedSagas = require('../sagas').default;
-			sagasManager.cancel();
-			sagasManager.done.then(() => {
-				sagasManager = sagaMiddleware(newYieldedSagas);
-			});
-		});
-	}
+	// 		const newYieldedSagas = require('../sagas').default;
+	// 		sagasManager.cancel();
+	// 		sagasManager.done.then(() => {
+	// 			sagasManager = sagaMiddleware(newYieldedSagas);
+	// 		});
+	// 	});
+	// }
 
 	return store;
 };

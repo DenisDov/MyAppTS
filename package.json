@@ -9,8 +9,8 @@
 		"5s": "react-native run-ios --simulator='iPhone 5s'",
 		"start": "react-native start",
 		"test": "jest",
-    "lint": "eslint './**/*.{ts,tsx}'",
-    "lint:fix": "eslint . --ext .ts,.tsx,.js,.jsx,.json --fix",
+    "lint": "eslint 'App/**/*.{ts,tsx,js,jsx}'",
+    "lint:fix": "eslint App/**/* --ext .ts,.tsx,.js,.jsx,.json --fix",
     "prettier": "prettier --write",
     "format-code": "yarn run prettier && yarn run lint:fix"
 	},

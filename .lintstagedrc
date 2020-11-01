@@ -1,5 +1,5 @@
 {
-  "*.tsx": [
+  "*.js": [
     "prettier --write",
     "eslint"
   ]

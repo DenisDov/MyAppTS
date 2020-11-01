@@ -9,8 +9,8 @@
 		"5s": "react-native run-ios --simulator='iPhone 5s'",
 		"start": "react-native start",
 		"test": "jest",
-		"lint": "eslint 'App/**/*.{ts,tsx,js,jsx}'",
-		"lint:fix": "eslint App/**/* --ext .ts,.tsx,.js,.jsx,.json --fix"
+    "lint": "eslint 'App/**/*.{ts,tsx,js,jsx}'",
+    "lint:fix": "eslint App/**/* --ext .ts,.tsx,.js,.jsx,.json --fix"
 	},
 	"dependencies": {
 		"@react-native-community/masked-view": "^0.1.10",
@@ -67,5 +67,9 @@
 		"hooks": {
 			"pre-commit": "lint-staged"
 		}
-	}
+	},
+	"lint-staged": {
+    "App/**/*.{js,jsx,ts,tsx,json,md}": "prettier --write",
+    "App/**/*.{ts,tsx,js,jsx,json}": "eslint --cache"
+  }
 }

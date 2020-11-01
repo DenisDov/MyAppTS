@@ -69,6 +69,6 @@
 		}
 	},
 	"lint-staged": {
-    "App/**/*.{ts,tsx,js,jsx,json}": "eslint --cache"
+    "App/**/*.js": "eslint"
   }
 }

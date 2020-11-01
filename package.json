@@ -69,6 +69,6 @@
 		}
 	},
 	"lint-staged": {
-    "*.js": "eslint"
+    "App/**/*.{ts,tsx,js,jsx}": "eslint"
   }
 }

@@ -69,6 +69,7 @@
 		}
 	},
 	"lint-staged": {
-    "App/**/*.{ts,tsx,js,jsx}": "eslint"
+    "App/**/*.{js,jsx,ts,tsx,json,md}": "prettier --write",
+    "App/**/*.{ts,tsx,js,jsx,json}": "eslint --cache"
   }
 }

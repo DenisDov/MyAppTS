@@ -71,7 +71,10 @@
 		}
 	},
 	"lint-staged": {
-		"*.{js,jsx,ts,tsx}": "eslint --cache --fix",
-		"*.{js,json,md}": "prettier --write"
+		"./**/*.{js,jsx,ts,tsx,json,md}": [
+			"prettier --write",
+			"yarn lint",
+			"git add"
+		]
 	}
 }

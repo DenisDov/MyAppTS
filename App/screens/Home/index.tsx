@@ -4,11 +4,11 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import FirstScreen from './FirstScreen';
 import Settings from './Settings';
 
-const Tab = createBottomTabNavigator();
+const Tabs = createBottomTabNavigator();
 
-export const HomeNavigator = () => (
-	<Tab.Navigator>
-		<Tab.Screen name="FirstScreen" component={FirstScreen} />
-		<Tab.Screen name="Settings" component={Settings} />
-	</Tab.Navigator>
+export const HomeNavigator: React.FC = () => (
+	<Tabs.Navigator>
+		<Tabs.Screen name="FirstScreen" component={FirstScreen} />
+		<Tabs.Screen name="Settings" component={Settings} />
+	</Tabs.Navigator>
 );

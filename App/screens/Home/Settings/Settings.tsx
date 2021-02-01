@@ -7,7 +7,7 @@ const styles = StyleSheet.create({
 	},
 });
 
-const Settings = () => {
+const Settings: React.FC = () => {
 	return (
 		<ScrollView contentInsetAdjustmentBehavior="automatic" style={styles.scrollView}>
 			<Text>Settings</Text>

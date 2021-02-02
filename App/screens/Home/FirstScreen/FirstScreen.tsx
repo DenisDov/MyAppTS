@@ -7,7 +7,7 @@ const styles = StyleSheet.create({
 	},
 });
 
-const FirstScreen = () => {
+const FirstScreen = (): JSX.Element => {
 	return (
 		<ScrollView contentInsetAdjustmentBehavior="automatic" style={styles.scrollView}>
 			<Text>FirstScreen</Text>
